@@ -1,0 +1,27 @@
+import socket
+import os
+import random
+
+class mytrojan:
+    host = input("input host: ")
+    target = input("target: ")
+    mytrojan = target.find("")
+
+    while mytrojan != -1:
+        mytrojan = target.find("", mytrojan + 1)
+        # Bu kısımda işlemler yapılabilir
+        print("Running...")  # Örnek bir çıktı
+    mytrojan = None  # Döngüden çıkınca işlem tamamlanır
+
+    def start(self, param):
+        print(f"Starting with param: {param}")
+        # Ek işlemler burada tanımlanabilir
+
+    def close(self, timeout):
+        print(f"Closing after {timeout} seconds")
+        # Kapatma işlemleri burada yapılabilir
+
+# Sınıf örneği oluşturma ve işlemleri başlatma
+mytrojan_instance = mytrojan()
+mytrojan_instance.start(1)
+mytrojan_instance.close(10)
